@@ -29,6 +29,32 @@
 
 ---
 
+### Command Line Interface 
+
+<!-- .slide: data-background="background-title-orig.jpg" -->
+
+```bash
+$ dcos
+Command line utility for the Mesosphere Datacenter Operating
+System (DC/OS). The Mesosphere DC/OS is a distributed operating
+system built around Apache Mesos. This utility provides tools
+for easy management of a DC/OS installation.
+
+Available DC/OS commands:
+
+    config          Get and set DC/OS CLI configuration properties
+    help            Display command line usage information
+    marathon        Deploy and manage applications on the DC/OS
+    node            Manage DC/OS nodes
+    package         Install and manage DC/OS packages
+    service         Manage DC/OS services
+    task            Manage DC/OS tasks
+
+Get detailed command description with 'dcos <command> --help'.
+```
+
+---
+
 ### SMACK Installation (1)
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
@@ -38,7 +64,6 @@ dcos package install --yes cassandra
 dcos package install --yes kafka
 dcos package install --yes spark
 dcos kafka topic add killrweather.raw
-dcos package install --yes zeppelin
 ```
 
 ---
