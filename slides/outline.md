@@ -2,9 +2,7 @@
 
 ### Outline
 
-- Fast Data
-- SMACK
-- DC/OS
-- Cloud Provisioning
-
-Note:
+- Fast Data  <!-- .element: class="fragment" --> 
+- SMACK  <!-- .element: class="fragment" --> 
+- DC/OS  <!-- .element: class="fragment" --> 
+- Cloud Provisioning  <!-- .element: class="fragment" --> 
