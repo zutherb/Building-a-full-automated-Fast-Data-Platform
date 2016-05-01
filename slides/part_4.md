@@ -2,6 +2,10 @@
 
 ### Demo
 
+- DC/OS
+- Cloudformation
+- Terraform
+
 ---
 
 <!-- .slide: data-background="img/background-title-orig.jpg" -->
