@@ -4,7 +4,7 @@
 
 #### keep calm
 #### and
-#### automate erverything
+#### automate everything
 
 ---
 

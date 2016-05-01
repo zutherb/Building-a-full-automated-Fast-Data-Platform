@@ -82,15 +82,15 @@
 
 ---
 
-<!-- .slide: data-background="img/background-title-orig.jpg" -->
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
 
 ### Kafka as a Multiplexer-Demultiplexer
 
-<img src="./img/kafka_multiplexer_demultiplexer.png" />
+<img src="./img/kafka_multiplexer_demultiplexer.png" style="height:600px" />
 
 ---
 
-<!-- .slide: data-background="img/background-title-orig.jpg" -->
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
 
 ### Backpresure
 
@@ -100,7 +100,7 @@ During Peak Times, the amount of incoming data may massively exceed the capacity
 
 ### Emerging Architecture 
 
-<!-- .slide: data-background="img/background-title-orig.jpg" -->
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
 
 <img src="./img/fast-data-architecture.png" style="height:600px" />
 

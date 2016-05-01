@@ -23,7 +23,7 @@
 
 ### DC/OS Installation
 
-<!-- .slide: data-background="img/background-green-orig.jpg" -->
+<!-- .slide: data-background="img/background-title-orig.jpg" -->
 
 <img src="./img/dcos_installation.png"/>
 
@@ -57,7 +57,7 @@ Get detailed command description with 'dcos <command> --help'.
 
 ### SMACK Installation (1)
 
-<!-- .slide: data-background="img/background-green-orig.jpg" -->
+<!-- .slide: data-background="img/background-title-orig.jpg" -->
 
 ```bash
 dcos package install --yes cassandra

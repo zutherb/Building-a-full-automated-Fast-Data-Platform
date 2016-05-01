@@ -7,8 +7,8 @@
 
 <!-- .slide: data-background="img/background_map_reduce.jpg" -->
 
-#Big-Batch saw that this was good <!-- .element: class="fragment" --> 
-##und has mapped and reduced ever since <!-- .element: class="fragment" --> 
+#Batch seems to be good <!-- .element: class="fragment" --> 
+##map and reduce was everywhere <!-- .element: class="fragment" --> 
 
 ---
 
@@ -46,7 +46,8 @@
 
 ---
 
-### Requirements for a Fast Data Architecture 
+### Requirements for a 
+### Fast Data Architecture 
 
 <!-- .slide: data-background="img/background-title-orig.jpg" -->
  

@@ -8,7 +8,7 @@
 
 ---
 
-<!-- .slide: data-background="img/background-title-orig.jpg" -->
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
 
 ### Cloudformation
 ## sucks
@@ -17,7 +17,7 @@
 
 ### Terraform
 
-<!-- .slide: data-background="img/background-title-orig.jpg" -->
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
 
 ```
 resource "aws_launch_configuration" "public_slave" {
