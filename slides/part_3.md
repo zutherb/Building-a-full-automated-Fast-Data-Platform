@@ -9,15 +9,15 @@
 
 <!-- .slide: data-background="img/background-title-orig.jpg" -->
 
-### Architecture
+### DC/OS Architecture
 
-<img src="./img/Enterprise-Architecture-Diagram.png"/>
+<img src="./img/dcos_architecture.svg" style="background-color: white"/>
 
 ---
 
-### Network Security
+### DC/OS Network Security
 
-<img src="./img/security-zones-ce.jpg" style="height:600px"/>
+<img src="./img/dcos_network_security.svg" style="height:600px"/>
 
 ---
 
