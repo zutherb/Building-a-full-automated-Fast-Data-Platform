@@ -33,3 +33,11 @@ resource "aws_launch_configuration" "public_slave" {
   }
 }
 ```
+
+---
+
+### Terraform - Source
+
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
+
+https://github.com/zutherb/terraform-dcos
