@@ -1,9 +1,3 @@
-### Wrapping Up
-
-<!-- .slide: data-background="img/background-orange-orig.jpg" -->
-
----
-
 <!-- .slide: data-background="img/background-title-orig.jpg" -->
 
 ### Summary
