@@ -3,11 +3,11 @@
 
 <!-- .slide: data-background="img/background-orange-orig.jpg" -->
 
-- Spark <!-- .element: class="fragment" --> 
-- Mesos <!-- .element: class="fragment" --> 
-- Akka <!-- .element: class="fragment" --> 
-- Cassandra <!-- .element: class="fragment" --> 
-- Kafka <!-- .element: class="fragment" --> 
+- S park <!-- .element: class="fragment" --> 
+- M esos <!-- .element: class="fragment" --> 
+- A kka <!-- .element: class="fragment" --> 
+- C assandra <!-- .element: class="fragment" --> 
+- K afka <!-- .element: class="fragment" --> 
 
 ---
 
@@ -27,7 +27,7 @@
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
 ###What about λ-Architectures? <!-- .element: class="fragment" --> 
-####Spark Operations cab be run unaltered in either batch or stream mode - it is always an RDD! <!-- .element: class="fragment" --> 
+####Spark Operations can be run unaltered in either batch or stream mode - <br />it is always an Resilient Distributed Dataset (RDD)! <!-- .element: class="fragment" --> 
 
 ---
 
@@ -49,12 +49,10 @@
 ### Akka
 #### Framework for reactive applications
 
-- Highly performant <!-- .element: class="fragment" --> 
+- Highly performant - 50 million messages per machine and second <!-- .element: class="fragment" --> 
 - Simple concurrency via asynchronous processing <!-- .element: class="fragment" --> 
 - elastic and without single point of failure <!-- .element: class="fragment" --> 
 - resilient <!-- .element: class="fragment" --> 
-- Lots and lots of performance <!-- .element: class="fragment" --> 
-- 50 million messages per machine and second <!-- .element: class="fragment" --> 
  
 ---
 
@@ -84,15 +82,23 @@
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
-### Kafka as a Multiplexer-Demultiplexer
+### Fast Data in the Microservice World
 
-<img src="./img/kafka_multiplexer_demultiplexer.png" style="height:600px" />
+<img src="./img/microservice.svg" />
 
 ---
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
-### Backpresure
+### Kafka as a Multiplexer-Demultiplexer
+
+<img src="./img/kafka_multiplexer_demultiplexer.png" style="background-color:white;" />
+
+---
+
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
+
+### Backpressure
 
 During Peak Times, the amount of incoming data may massively exceed the capacity - just think of IoT. The back-pressure in the processing pipelines needs to be actively managed, otherwise data is lost. 
 

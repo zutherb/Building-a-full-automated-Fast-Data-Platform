@@ -51,6 +51,6 @@
 
 <!-- .slide: data-background="img/background-title-orig.jpg" -->
  
-  - Reliable data ingestion. <!-- .element: class="fragment" --> 
-  - Flexible storage and query options. <!-- .element: class="fragment" --> 
+  - Reliable data ingestion <!-- .element: class="fragment" --> 
+  - Flexible storage and query options <!-- .element: class="fragment" --> 
   - Sophisticated analytics tools <!-- .element: class="fragment" --> 
