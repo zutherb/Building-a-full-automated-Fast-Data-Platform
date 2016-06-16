@@ -89,3 +89,101 @@ cat > /opt/smack/conf/killrweather_ingest.json << EOF
 EOF
 dcos marathon app add /opt/smack/conf/killrweather_ingest.json
 ```
+
+---
+
+### Service Discovery
+
+<table style="font-size: large;">
+    <thead>
+        <tr>
+            <th style="width:33%">DNS-based</th>
+            <th style="width:33%">Proxy-based</th>
+            <th style="width:33%">Application-aware</th>
+        <tr>
+    </thead>
+    <thead>
+        <tr>
+            <td>&#x1f604; easy to integrate</td>
+            <td>no port conflicts</td>
+            <td>developer fully in control and full-feature</td>
+        <tr>
+        <tr>
+            <td>SRV records</td>
+            <td>fast failover</td>
+            <td>implementation effort</td>
+        <tr>
+        <tr>
+            <td>no health checks</td>
+            <td>no UDP</td>
+            <td>requires distributed state management (ZK, etcd or Consul)</td>
+        <tr>
+        <tr>
+            <td>TTL</td>
+            <td>management of VIPs (Minuteman) or service ports (Marathon-lb)</td>
+            <td>&nbsp;</td>
+        <tr>
+    </thead>
+</table>
+
+---
+
+### A Records
+
+<!-- .slide: data-background="img/background-title-orig.jpg" -->
+
+- An A record associates a hostname to an IP address
+
+```bash
+bz@cc ~/$ dig app.marathon.mesos
+
+; <<>> DiG 9.8.3-P1 <<>> app.marathon.mesos
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 64295
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;app.marathon.mesos.		IN	A
+
+;; ANSWER SECTION:
+app.marathon.mesos.	60	IN	A	10.0.3.199
+
+;; Query time: 33 msec
+;; SERVER: 10.0.5.98#53(10.0.5.98)
+;; WHEN: Thu Jun 16 19:54:23 2016
+;; MSG SIZE  rcvd: 52
+```
+
+---
+
+### SRV Records
+
+<!-- .slide: data-background="img/background-title-orig.jpg" -->
+
+- An SRV record associates a service name to a hostname and an IP port
+
+```bash
+bz@cc ~/$  dig _app._tcp.marathon.mesos SRV
+
+; <<>> DiG 9.8.3-P1 <<>> _app._tcp.marathon.mesos SRV
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 27788
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; QUESTION SECTION:
+;_app._tcp.marathon.mesos.      IN      SRV
+
+;; ANSWER SECTION:
+_app._tcp.marathon.mesos. 60    IN      SRV     0 0 >>10148<< app-qtugm-s5.marathon.mesos.
+
+;; ADDITIONAL SECTION:
+app-qtugm-s5.marathon.mesos. 60 IN      A       10.0.3.199
+
+;; Query time: 44 msec
+;; SERVER: 10.0.5.98#53(10.0.5.98)
+;; WHEN: Thu Jun 16 19:58:55 2016
+;; MSG SIZE  rcvd: 118
+
+```

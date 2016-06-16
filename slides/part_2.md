@@ -14,7 +14,7 @@
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
 ### Spark
-#### Swiss Army Knife for Data
+#### Swiss Army Knife for Data Processing
 
 - ETL Jobs <!-- .element: class="fragment" --> 
 - μ-Batching on Streams <!-- .element: class="fragment" --> 
@@ -36,11 +36,10 @@
 ### Mesos
 #### Distributed Kernel for the Cloud
 
-- Links machines to a logical instance <!-- .element: class="fragment" --> 
+- Links machines to one logical instance <!-- .element: class="fragment" --> 
 - Static deployment of Mesos <!-- .element: class="fragment" --> 
 - Dynamic deployment of the workload <!-- .element: class="fragment" --> 
 - Good integration with Hadoop, Kafka, Spark, and Akka <!-- .element: class="fragment" --> 
-- Lots and lots of machines <!-- .element: class="fragment" --> 
 
 ---
 
@@ -49,10 +48,10 @@
 ### Akka
 #### Framework for reactive applications
 
-- Highly performant - 50 million messages per machine and second <!-- .element: class="fragment" --> 
+- Highly performant - 50 million messages per machine in a second <!-- .element: class="fragment" --> 
 - Simple concurrency via asynchronous processing <!-- .element: class="fragment" --> 
-- elastic and without single point of failure <!-- .element: class="fragment" --> 
-- resilient <!-- .element: class="fragment" --> 
+- Elastic, resilient and without single point of failure <!-- .element: class="fragment" --> 
+- Used for application that can process or query data <!-- .element: class="fragment" --> 
  
 ---
 
@@ -82,7 +81,7 @@
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
-### Fast Data in the Microservice World
+### Microservice World
 
 <img src="./img/microservice.svg" />
 
@@ -96,17 +95,32 @@
 
 ---
 
-<!-- .slide: data-background="img/background-green-orig.jpg" -->
-
-### Backpressure
-
-During Peak Times, the amount of incoming data may massively exceed the capacity - just think of IoT. The back-pressure in the processing pipelines needs to be actively managed, otherwise data is lost. 
-
----
-
 ### Emerging Architecture 
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
 <img src="./img/fast-data-architecture.png" style="height:600px" />
 
+---
+
+### Zeppelin
+
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
+
+<img src="./img/zeppelin.png" />
+
+---
+
+### Traditional Approach
+
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
+
+<img src="./img/traditional_approach.png" />
+
+---
+
+### DC/OS Approach
+
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
+
+<img src="./img/dcos_approach.png" />
