@@ -1,6 +1,6 @@
 <!-- .slide: data-background="img/background-orange-orig.jpg" -->
 
-### Cloud Provisioning
+### Extend our DC/OS cluster
 
 <img src="./img/dcos_installation.png"/>
 
@@ -19,6 +19,13 @@
 ### Add ELK
 
 <img src="./img/elk.svg" style="background-color:white;height:600px"/>
+
+---
+
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
+
+### Cloudformation
+## sucks
 
 ---
 
@@ -73,10 +80,25 @@
 
 ---
 
+### Working with Cloudformation
+
+- &#x1f604; Easy integration in a build pipeline  <!-- .element: class="fragment" --> 
+- &#128557; Hard to maintain  <!-- .element: class="fragment" --> 
+- &#128557; Hard to extend  <!-- .element: class="fragment" --> 
+- &#128557; Not Cloud-agnostic (only support AWS) <!-- .element: class="fragment" --> 
+
+---
+
+### Terraform
+#### Build, Combine, and Launch Infrastructure
+
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
-### Cloudformation
-## sucks
+<img class="logo" src="./img/logo-terraform.png" />
+
+- Infrastructure as code <!-- .element: class="fragment" --> 
+- Combine Multiple Providers (AWS, Azure, etc.) <!-- .element: class="fragment" --> 
+- Evolve your Infrastructure <!-- .element: class="fragment" --> 
 
 ---
 
@@ -101,8 +123,17 @@ resource "aws_launch_configuration" "public_slave" {
 
 ---
 
-### Terraform - Source
+### Benefits of Terraform
+
+- &#x1f604; Easy integration in a build pipeline  <!-- .element: class="fragment" --> 
+- &#x1f604; Easier to maintain  <!-- .element: class="fragment" --> 
+- &#x1f604; Easier to extend  <!-- .element: class="fragment" --> 
+- &#x1f604; Cloud-agnostic (only support AWS) <!-- .element: class="fragment" --> 
+
+---
+
+### Terraform - DC/OS Source
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
-https://github.com/zutherb/terraform-dcos
+<p style="color:white">https://github.com/zutherb/terraform-dcos</p> 

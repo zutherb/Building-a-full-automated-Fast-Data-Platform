@@ -1,13 +1,13 @@
 <!-- .slide: data-background="img/background_hadoop.jpg" -->
 
-## In the beginning there was <!-- .element: class="fragment" --> 
+## In the beginning of Big Data there was <!-- .element: class="fragment" --> 
 # HADOOP <!-- .element: class="fragment" --> 
 
 ---
 
 <!-- .slide: data-background="img/background_map_reduce.jpg" -->
 
-#Batch seems to be good <!-- .element: class="fragment" --> 
+#Batch<br />seems to be good <!-- .element: class="fragment" --> 
 ##map and reduce was everywhere <!-- .element: class="fragment" --> 
 
 ---
@@ -41,7 +41,7 @@
 
 <!-- .slide: data-background="img/background-title-orig.jpg" -->
  
-> Fast Data captures a range of new systems and approaches, which balance various 
+> Fast Data covers a range of new systems and approaches, which balance various 
 > tradeoffs to deliver timely, cost-efficient data processing, as well as higher developer productivity. 
 
 ---

@@ -13,8 +13,9 @@
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
-### Spark
+<img class="logo" src="./img/logo-spark.png" />
 #### Swiss Army Knife for Data Processing
+
 
 - ETL Jobs <!-- .element: class="fragment" --> 
 - μ-Batching on Streams <!-- .element: class="fragment" --> 
@@ -33,8 +34,10 @@
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
+<img class="logo" src="./img/logo-mesos.png" />
 ### Mesos
 #### Distributed Kernel for the Cloud
+
 
 - Links machines to one logical instance <!-- .element: class="fragment" --> 
 - Static deployment of Mesos <!-- .element: class="fragment" --> 
@@ -45,8 +48,9 @@
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
-### Akka
+<img class="logo" src="./img/logo-akka.svg" />
 #### Framework for reactive applications
+
 
 - Highly performant - 50 million messages per machine in a second <!-- .element: class="fragment" --> 
 - Simple concurrency via asynchronous processing <!-- .element: class="fragment" --> 
@@ -57,8 +61,9 @@
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
-### Cassandra
+<img class="logo" src="./img/logo-cassandra.png" />
 #### Performant and Always-Up NoSQL Database
+
 
 - Linear scaling - approx. 10'000 requests per machine and second <!-- .element: class="fragment" --> 
 - No Downtime <!-- .element: class="fragment" --> 
@@ -69,8 +74,9 @@
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
+<img class="logo" src="./img/logo-kafka.png" />
 ### Kafka
-#### Messaging for Big Data
+#### Messaging system for Big Data applications
      
 - Fast - Delivers hundreds of MegaBytes per second to 1000s of clients <!-- .element: class="fragment" --> 
 - Scales - Partitions data to manageable volumes <!-- .element: class="fragment" --> 

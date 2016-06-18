@@ -121,7 +121,7 @@ dcos marathon app add /opt/smack/conf/killrweather_ingest.json
         <tr>
             <td>&#128557; TTL</td>
             <td>&#128557; management of VIPs (Minuteman) or service ports (Marathon-lb)</td>
-            <td>&#128557; &nbsp;</td>
+            <td>&nbsp;</td>
         <tr>
     </thead>
 </table>
@@ -137,22 +137,24 @@ dcos marathon app add /opt/smack/conf/killrweather_ingest.json
 ```bash
 bz@cc ~/$ dig app.marathon.mesos
 
-; <<>> DiG 9.8.3-P1 <<>> app.marathon.mesos
+; <<>> DiG 9.9.5-3ubuntu0.7-Ubuntu <<>> app.marathon.mesos
 ;; global options: +cmd
 ;; Got answer:
-;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 64295
-;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 9336
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 0
 
 ;; QUESTION SECTION:
 ;app.marathon.mesos.		IN	A
 
 ;; ANSWER SECTION:
+app.marathon.mesos.	60	IN	A	10.0.3.201
 app.marathon.mesos.	60	IN	A	10.0.3.199
 
-;; Query time: 33 msec
+;; Query time: 2 msec
 ;; SERVER: 10.0.5.98#53(10.0.5.98)
-;; WHEN: Thu Jun 16 19:54:23 2016
-;; MSG SIZE  rcvd: 52
+;; WHEN: Fri Jun 17 10:22:14 UTC 2016
+;; MSG SIZE  rcvd: 68
+
 ```
 
 ---
@@ -166,24 +168,87 @@ app.marathon.mesos.	60	IN	A	10.0.3.199
 ```bash
 bz@cc ~/$  dig _app._tcp.marathon.mesos SRV
 
-; <<>> DiG 9.8.3-P1 <<>> _app._tcp.marathon.mesos SRV
+
+; <<>> DiG 9.9.5-3ubuntu0.7-Ubuntu <<>> _app._tcp.marathon.mesos SRV
 ;; global options: +cmd
 ;; Got answer:
-;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 27788
-;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 31708
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 2
 
 ;; QUESTION SECTION:
-;_app._tcp.marathon.mesos.      IN      SRV
+;_app._tcp.marathon.mesos.	IN	SRV
 
 ;; ANSWER SECTION:
-_app._tcp.marathon.mesos. 60    IN      SRV     0 0 >>10148<< app-qtugm-s5.marathon.mesos.
+_app._tcp.marathon.mesos. 60	IN	SRV	0 0 10148 app-qtugm-s5.marathon.mesos.
+_app._tcp.marathon.mesos. 60	IN	SRV	0 0 13289 app-t49o6-s2.marathon.mesos.
 
 ;; ADDITIONAL SECTION:
-app-qtugm-s5.marathon.mesos. 60 IN      A       10.0.3.199
+app-qtugm-s5.marathon.mesos. 60	IN	A	10.0.3.199
+app-t49o6-s2.marathon.mesos. 60	IN	A	10.0.3.201
 
-;; Query time: 44 msec
+;; Query time: 2 msec
 ;; SERVER: 10.0.5.98#53(10.0.5.98)
-;; WHEN: Thu Jun 16 19:58:55 2016
-;; MSG SIZE  rcvd: 118
+;; WHEN: Fri Jun 17 10:21:29 UTC 2016
+;; MSG SIZE  rcvd: 194
 
 ```
+
+
+---
+
+### DNS Pattern
+
+<table style="font-size: large;">
+    <thead>
+        <tr>
+            <th>Service</th>
+            <th>CT-IP Avail</th>
+            <th>DI Avail</th>
+            <th>Target Host</th>
+            <th>Target Port</th>
+            <th>A (Target Resolution)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><em>{task}.</em>{proto}.framework.domain</td>
+            <td>no</td>
+            <td>no</td>
+            <td>{task}.framework.slave.domain</td>
+            <td>host-port</td>
+            <td>slave-ip</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>yes</td>
+            <td>no</td>
+            <td>{task}.framework.slave.domain</td>
+            <td>host-port</td>
+            <td>slave-ip</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>no</td>
+            <td>yes</td>
+            <td>{task}.framework.domain</td>
+            <td>di-port</td>
+            <td>slave-ip</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>{task}.framework.domain</td>
+            <td>di-port</td>
+            <td>container-ip</td>
+        </tr>
+        <tr>
+            <td><em>{task}.</em>{proto}.framework.slave.domain</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>{task}.framework.slave.domain</td>
+            <td>host-port</td>
+            <td>slave-ip</td>
+        </tr>
+    </tbody>
+</table>

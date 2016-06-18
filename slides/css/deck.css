@@ -22,3 +22,10 @@
     left: 1em;
     font-size: 0.5em;
 }
+
+.reveal section img.logo {
+    border : 0;
+    background : 0;
+    box-shadow : none;
+    height:100px
+}
