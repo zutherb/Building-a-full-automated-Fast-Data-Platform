@@ -94,7 +94,7 @@ dcos marathon app add /opt/smack/conf/killrweather_ingest.json
 
 ### Service Discovery
 
-<table style="font-size: large;">
+<table style="font-size: 30px;">
     <thead>
         <tr>
             <th style="width:33%">DNS-based</th>
