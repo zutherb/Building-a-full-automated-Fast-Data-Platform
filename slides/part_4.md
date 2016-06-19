@@ -24,13 +24,6 @@
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
-### Cloudformation
-## sucks
-
----
-
-<!-- .slide: data-background="img/background-green-orig.jpg" -->
-
 ### Download Filebeat
 
 ```
@@ -82,6 +75,11 @@
 
 ### Working with Cloudformation
 
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
+
+<img class="logo" src="./img/logo-cloudformation.svg" />
+
+
 - &#x1f604; Easy integration in a build pipeline  <!-- .element: class="fragment" --> 
 - &#128557; Hard to maintain  <!-- .element: class="fragment" --> 
 - &#128557; Hard to extend  <!-- .element: class="fragment" --> 
@@ -129,6 +127,14 @@ resource "aws_launch_configuration" "public_slave" {
 - &#x1f604; Easier to maintain  <!-- .element: class="fragment" --> 
 - &#x1f604; Easier to extend  <!-- .element: class="fragment" --> 
 - &#x1f604; Cloud-agnostic (only support AWS) <!-- .element: class="fragment" --> 
+
+---
+
+### DEV/Prod Cluster
+
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
+
+<img src="./img/multi_cluster_concept.png" style="background-color:white;height:600px" />
 
 ---
 
