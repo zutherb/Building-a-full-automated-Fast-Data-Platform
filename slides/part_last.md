@@ -18,7 +18,7 @@
 - Cassandra is good to query known problem <!-- .element: class="fragment" --> 
 - When dealing with unknown problem it better to store raw data with Apache Parquet <!-- .element: class="fragment" --> 
 - Automate everything <!-- .element: class="fragment" --> 
-- Bleeding edge somethings sucks <!-- .element: class="fragment" --> 
+- Bleeding edge somethings sucks (Zeppelin, S3a, Spark, etc.) <!-- .element: class="fragment" --> 
 
 ---
 
