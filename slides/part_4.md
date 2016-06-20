@@ -123,6 +123,8 @@ resource "aws_launch_configuration" "public_slave" {
 
 ### Benefits of Terraform
 
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
+
 - &#x1f604; Easy integration in a build pipeline  <!-- .element: class="fragment" --> 
 - &#x1f604; Easier to maintain  <!-- .element: class="fragment" --> 
 - &#x1f604; Easier to extend  <!-- .element: class="fragment" --> 
