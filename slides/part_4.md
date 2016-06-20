@@ -126,7 +126,7 @@ resource "aws_launch_configuration" "public_slave" {
 - &#x1f604; Easy integration in a build pipeline  <!-- .element: class="fragment" --> 
 - &#x1f604; Easier to maintain  <!-- .element: class="fragment" --> 
 - &#x1f604; Easier to extend  <!-- .element: class="fragment" --> 
-- &#x1f604; Cloud-agnostic (only support AWS) <!-- .element: class="fragment" --> 
+- &#x1f604; Cloud-agnostic (AWS, Azure, etc.) <!-- .element: class="fragment" --> 
 
 ---
 
