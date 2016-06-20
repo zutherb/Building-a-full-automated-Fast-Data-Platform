@@ -7,7 +7,7 @@
 - Cassandra provides a flexible storage and query options <!-- .element: class="fragment" --> 
 - Mesos enables fault-tolerant and elastic distributed systems <!-- .element: class="fragment" --> 
 - Zeppelin is a sophisticated analytics tool <!-- .element: class="fragment" --> 
-- Terraform makes it easy to integration our infrastructure with a build pipeline  <!-- .element: class="fragment" --> 
+- Terraform makes it easy to integrate our infrastructure with a build pipeline  <!-- .element: class="fragment" --> 
 
 ---
 
