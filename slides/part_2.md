@@ -21,7 +21,7 @@
 - μ-Batching on Streams <!-- .element: class="fragment" --> 
 - SQL and Joins on non-RDBMS <!-- .element: class="fragment" --> 
 - Graph Operations on non-Graphs <!-- .element: class="fragment" --> 
-- Map/Reduce in super fast <!-- .element: class="fragment" --> 
+- Super Fast Map/Reduce <!-- .element: class="fragment" --> 
 
 ---
 
@@ -80,7 +80,7 @@
      
 - Fast - Delivers hundreds of MegaBytes per second to 1000s of clients <!-- .element: class="fragment" --> 
 - Scales - Partitions data to manageable volumes <!-- .element: class="fragment" --> 
-- Data-Safety - Append Only allows buffering of TBs without a performance impact <!-- .element: class="fragment" --> 
+- Managing backpressure <!-- .element: class="fragment" --> 
 - Distributed - from the ground up <!-- .element: class="fragment" --> 
 
 ---
@@ -114,6 +114,16 @@
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
 <img src="./img/zeppelin.png" />
+
+---
+
+### Zeppelin
+
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
+
+- &#x1f604; No Jar-Wars  <!-- .element: class="fragment" --> 
+- &#x1f604; Easy Analytics  <!-- .element: class="fragment" --> 
+- &#x1f621; New Technology  <!-- .element: class="fragment" --> 
 
 ---
 
