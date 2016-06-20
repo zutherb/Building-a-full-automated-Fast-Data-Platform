@@ -129,10 +129,11 @@ resource "aws_launch_configuration" "public_slave" {
 - &#x1f604; Easier to maintain  <!-- .element: class="fragment" --> 
 - &#x1f604; Easier to extend  <!-- .element: class="fragment" --> 
 - &#x1f604; Cloud-agnostic (AWS, Azure, etc.) <!-- .element: class="fragment" --> 
+- &#x1f621; Need some time until new resources are adopted  <!-- .element: class="fragment" --> 
 
 ---
 
-### DEV/Prod Cluster
+### Multi Cluster Approach
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 

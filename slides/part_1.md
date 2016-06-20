@@ -23,9 +23,9 @@
 
 <!-- .slide: data-background="img/background_modern.jpg" -->
 
-- Updating machine learning models as new information arrives. <!-- .element: class="fragment" --> 
-- Detecting anomalies, faults, performance problems, etc. and taking timely action. <!-- .element: class="fragment" --> 
-- Aggregating and processing data on arrival for downstream storage and analytics. <!-- .element: class="fragment" -->  
+- Updating machine learning models as new information arrives <!-- .element: class="fragment" --> 
+- Detecting anomalies, faults, performance problems, etc. and taking timely action <!-- .element: class="fragment" --> 
+- Aggregating and processing data on arrival for downstream storage and analytics <!-- .element: class="fragment" -->  
   
 ---
 

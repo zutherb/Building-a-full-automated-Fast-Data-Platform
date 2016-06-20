@@ -163,7 +163,7 @@ app.marathon.mesos.	60	IN	A	10.0.3.199
 
 <!-- .slide: data-background="img/background-title-orig.jpg" -->
 
-- An SRV record associates a service name to a hostname and an IP port
+- A SRV record associates a service name to a hostname and an IP port
 
 ```bash
 bz@cc ~/$  dig _app._tcp.marathon.mesos SRV

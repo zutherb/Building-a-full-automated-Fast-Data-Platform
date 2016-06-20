@@ -28,7 +28,7 @@
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
 ###What about λ-Architectures? <!-- .element: class="fragment" --> 
-####Spark Operations can be run unaltered in either batch or stream mode - <br />it is always an Resilient Distributed Dataset (RDD)! <!-- .element: class="fragment" --> 
+####Spark Operations can be run unaltered in either batch or stream mode - <br />it is always a Resilient Distributed Dataset (RDD)! <!-- .element: class="fragment" --> 
 
 ---
 
@@ -55,7 +55,7 @@
 - Highly performant - 50 million messages per machine in a second <!-- .element: class="fragment" --> 
 - Simple concurrency via asynchronous processing <!-- .element: class="fragment" --> 
 - Elastic, resilient and without single point of failure <!-- .element: class="fragment" --> 
-- Used for application that can process or query data <!-- .element: class="fragment" --> 
+- Used for applications that can process or query data <!-- .element: class="fragment" --> 
  
 ---
 
@@ -66,7 +66,7 @@
 
 
 - Linear scaling - approx. 10'000 requests per machine and second <!-- .element: class="fragment" --> 
-- No Downtime <!-- .element: class="fragment" --> 
+- No downtime <!-- .element: class="fragment" --> 
 - Comfort of a column index with append-only performance Data-Safety over multiple data-centers <!-- .element: class="fragment" --> 
 - Strong in denormalized models <!-- .element: class="fragment" --> 
 
@@ -78,8 +78,8 @@
 ### Kafka
 #### Messaging system for Big Data applications
      
-- Fast - Delivers hundreds of MegaBytes per second to 1000s of clients <!-- .element: class="fragment" --> 
-- Scales - Partitions data to manageable volumes <!-- .element: class="fragment" --> 
+- Fast - delivers hundreds of MegaBytes per second to 1000s of clients <!-- .element: class="fragment" --> 
+- Scales - partitions data to manageable volumes <!-- .element: class="fragment" --> 
 - Managing backpressure <!-- .element: class="fragment" --> 
 - Distributed - from the ground up <!-- .element: class="fragment" --> 
 
@@ -122,8 +122,8 @@
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
 - &#x1f604; No Jar-Wars  <!-- .element: class="fragment" --> 
-- &#x1f604; Easy Analytics  <!-- .element: class="fragment" --> 
-- &#x1f621; New Technology  <!-- .element: class="fragment" --> 
+- &#x1f604; Easy analytics  <!-- .element: class="fragment" --> 
+- &#x1f621; New technology  <!-- .element: class="fragment" --> 
 
 ---
 
