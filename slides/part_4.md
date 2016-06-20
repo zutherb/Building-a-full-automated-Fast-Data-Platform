@@ -81,9 +81,9 @@
 
 
 - &#x1f604; Easy integration in a build pipeline  <!-- .element: class="fragment" --> 
-- &#128557; Hard to maintain  <!-- .element: class="fragment" --> 
-- &#128557; Hard to extend  <!-- .element: class="fragment" --> 
-- &#128557; Not Cloud-agnostic (only support AWS) <!-- .element: class="fragment" --> 
+- &#x1f621; Hard to maintain  <!-- .element: class="fragment" --> 
+- &#x1f621; Hard to extend  <!-- .element: class="fragment" --> 
+- &#x1f621; Not Cloud-agnostic (only support AWS) <!-- .element: class="fragment" --> 
 
 ---
 

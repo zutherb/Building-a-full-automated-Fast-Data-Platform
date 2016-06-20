@@ -109,18 +109,18 @@ dcos marathon app add /opt/smack/conf/killrweather_ingest.json
             <td>&#x1f604; developer fully in control and full-feature</td>
         <tr>
         <tr>
-            <td>&#128557; SRV records</td>
+            <td>&#x1f621; SRV records</td>
             <td>&#x1f604; fast failover</td>
-            <td>&#128557; implementation effort</td>
+            <td>&#x1f621; implementation effort</td>
         <tr>
         <tr>
-            <td>&#128557; no health checks</td>
-            <td>&#128557; no UDP</td>
-            <td>&#128557; requires distributed state management (ZK, etcd or Consul)</td>
+            <td>&#x1f621; no health checks</td>
+            <td>&#x1f621; no UDP</td>
+            <td>&#x1f621; requires distributed state management (ZK, etcd or Consul)</td>
         <tr>
         <tr>
-            <td>&#128557; TTL</td>
-            <td>&#128557; management of VIPs (Minuteman) or service ports (Marathon-lb)</td>
+            <td>&#x1f621; TTL</td>
+            <td>&#x1f621; management of VIPs (Minuteman) or service ports (Marathon-lb)</td>
             <td>&nbsp;</td>
         <tr>
     </thead>
