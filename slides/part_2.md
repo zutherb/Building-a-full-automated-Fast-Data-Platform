@@ -28,7 +28,7 @@
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
 ###What about λ-Architectures? <!-- .element: class="fragment" --> 
-####Spark Operations can be run unaltered in either batch or stream mode - <br />it is always a Resilient Distributed Dataset (RDD)! <!-- .element: class="fragment" --> 
+####Spark Operations can be run unaltered in either batch or stream mode - <br />it is always a Resilient Distributed Dataset (RDD) or DStream! <!-- .element: class="fragment" --> 
 
 ---
 
