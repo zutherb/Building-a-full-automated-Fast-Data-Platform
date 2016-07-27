@@ -2,7 +2,7 @@
 
 ### Summary
 
-- SMACK is a good working Fast Data platform <!-- .element: class="fragment" --> 
+- SMACK helps you to build a near realtime Fast Data platform <!-- .element: class="fragment" --> 
 - Kafka &amp; Akka can be used for reliable data ingestion <!-- .element: class="fragment" --> 
 - Cassandra provides a flexible storage and query options <!-- .element: class="fragment" --> 
 - Mesos enables fault-tolerant and elastic distributed systems <!-- .element: class="fragment" --> 
@@ -22,9 +22,25 @@
 
 ---
 
+### Is your infrastructure a pet
+
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
+
+<img src="./img/pig.jpg" style="background-color:white;height:600px" />
+
+---
+
+### Treat your infrastructure like cattle
+
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
+
+<img src="./img/cattle.jpg" style="background-color:white;height:500px"  />
+
+---
+
 <!-- .slide: data-background="img/background-title-orig.jpg" -->
 
-### Short Summary
+### If you want your infrastructure like cattle
 
 #### keep calm
 #### and

@@ -29,6 +29,14 @@
 
 ---
 
+### DC/OS Universe
+
+<!-- .slide: data-background="img/background-title-orig.jpg" -->
+
+<img src="./img/universe.png"/>
+
+---
+
 ### Command Line Interface 
 
 <!-- .slide: data-background="background-title-orig.jpg" -->
@@ -94,7 +102,9 @@ dcos marathon app add /opt/smack/conf/killrweather_ingest.json
 
 ### Service Discovery
 
-<table style="font-size: 30px;">
+<!-- .slide: data-background="img/background-title-orig.jpg" -->
+
+<table style="font-size: 25px;">
     <thead>
         <tr>
             <th style="width:33%">DNS-based</th>
@@ -198,7 +208,9 @@ app-t49o6-s2.marathon.mesos. 60	IN	A	10.0.3.201
 
 ### DNS Pattern
 
-<table style="font-size: large;">
+<!-- .slide: data-background="img/background-title-orig.jpg" -->
+
+<table style="font-size: 20px;">
     <thead>
         <tr>
             <th>Service</th>
@@ -252,3 +264,15 @@ app-t49o6-s2.marathon.mesos. 60	IN	A	10.0.3.201
         </tr>
     </tbody>
 </table>
+
+---
+
+Benefits and downsides of DC/OS
+
+<!-- .slide: data-background="img/background-title-orig.jpg" -->
+
+- &#x1f604; Layer that abstract hardware  <!-- .element: class="fragment" --> 
+- &#x1f604; Applicaton run in a sandbox with and without Docker <!-- .element: class="fragment" --> 
+- &#x1f604; Buildin service discovery <!-- .element: class="fragment" --> 
+- &#x1f621; Effort to training the technology <!-- .element: class="fragment" --> 
+- &#x1f621; Monitoring gets a bigger rule <!-- .element: class="fragment" --> 

@@ -133,7 +133,7 @@ resource "aws_launch_configuration" "public_slave" {
 
 ---
 
-### Multi Cluster Approach
+### Create infrastructure with Jenkins
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
@@ -141,8 +141,9 @@ resource "aws_launch_configuration" "public_slave" {
 
 ---
 
-### Terraform - DC/OS Source
+### Terraform - DC/OS Source &amp; Real World Example
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
+<p style="color:white">https://github.com/ANierbeck/BusFloatingData</p> 
 <p style="color:white">https://github.com/zutherb/terraform-dcos</p> 

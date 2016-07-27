@@ -15,7 +15,7 @@
 <!-- .slide: data-background="img/background_modern.jpg" -->
 
 
-## But Business does not wait. <!-- .element: class="fragment" --> 
+## But now Business does not wait. <!-- .element: class="fragment" --> 
 ### It always demands more... <!-- .element: class="fragment" --> 
 # ever faster <!-- .element: class="fragment" --> 
   
