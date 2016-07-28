@@ -107,8 +107,8 @@
 			<integer>81</integer>
 			<key>Points</key>
 			<array>
-				<string>{236.41934894510561, 427.46940947647795}</string>
-				<string>{370.70531626099762, 340.27266445962908}</string>
+				<string>{236.41929936654688, 427.44331503170974}</string>
+				<string>{370.61193619909443, 340.2724322261991}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -204,8 +204,8 @@
 			<integer>79</integer>
 			<key>Points</key>
 			<array>
-				<string>{701.68278792551337, 239.50000326667063}</string>
-				<string>{701.96511393704031, 161.49997881316037}</string>
+				<string>{701.52823085210787, 239.50000009391752}</string>
+				<string>{701.57183494093272, 161.49999948626379}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -301,8 +301,8 @@
 			<integer>77</integer>
 			<key>Points</key>
 			<array>
-				<string>{701.60439583451671, 452.50000106984805}</string>
-				<string>{701.83592722024355, 340.49998894633478}</string>
+				<string>{701.51008229016077, 452.49999999956901}</string>
+				<string>{701.53244301291238, 340.49999990302962}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -397,8 +397,8 @@
 			<integer>75</integer>
 			<key>Points</key>
 			<array>
-				<string>{236.49992099377559, 494.79565980919642}</string>
-				<string>{600.50007357114589, 501.26715442120553}</string>
+				<string>{236.49992192029242, 494.78497972692981}</string>
+				<string>{600.50007782699504, 501.21798369900722}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -441,8 +441,8 @@
 			<integer>74</integer>
 			<key>Points</key>
 			<array>
-				<string>{535.33082992892332, 651.79146236974077}</string>
-				<string>{645.28873196055008, 553.3335418544707}</string>
+				<string>{534.95833477688302, 652.125}</string>
+				<string>{645.28788757061125, 553.33353905350486}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -986,7 +986,7 @@
 			<key>Points</key>
 			<array>
 				<string>{135.50001367858962, 158.2870058530504}</string>
-				<string>{135.50001367858962, 220.49999999581382}</string>
+				<string>{135.50001367858962, 220.49999999581328}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -1113,7 +1113,8 @@
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\b\fs36 \cf0 Internet}</string>
+\f0\b\fs36 \cf0 Internet\
+Metro Bus API}</string>
 				<key>VerticalPad</key>
 				<integer>0</integer>
 			</dict>
@@ -1176,7 +1177,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2016-07-27 14:21:01 +0000</string>
+	<string>2016-07-27 14:58:35 +0000</string>
 	<key>Modifier</key>
 	<string>Bernd Zuther</string>
 	<key>NotesVisible</key>
