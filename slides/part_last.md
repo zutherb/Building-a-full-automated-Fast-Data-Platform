@@ -48,14 +48,14 @@
 
 ---
 
-<!-- .slide: data-background="img/background-orange-orig.jpg" -->
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
 
 ### Feedback
 
 <p>@Bernd_Z</p>
 
-<p style="color:white">http://github.com/zutherb</p>
-<p style="color:white">https://zutherb.github.io/Building-a-full-automated-Fast-Data-Platform/slides/</p>  
+<p style="background-color:white">http://github.com/zutherb</p>
+<p style="background-color:white">https://zutherb.github.io/Building-a-full-automated-Fast-Data-Platform/slides/</p>  
 
 ---
 
