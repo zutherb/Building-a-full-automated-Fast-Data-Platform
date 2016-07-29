@@ -63,7 +63,7 @@ Get detailed command description with 'dcos <command> --help'.
 
 ---
 
-### SMACK Installation (1)
+### SMACK Installation - Databases/Tools
 
 <!-- .slide: data-background="img/background-title-orig.jpg" -->
 
@@ -76,26 +76,34 @@ dcos kafka topic add killrweather.raw
 
 ---
 
-### SMACK Installation (2)
+### SMACK Installation - Custom Application
 
 <!-- .slide: data-background="img/background-title-orig.jpg" -->
 
 ```bash
-cat > /opt/smack/conf/killrweather_ingest.json << EOF
+cat > /opt/smack/conf/bus-demo-ingest.json << EOF
 {
     "id": "/ingest",
     "container": {
         "type": "DOCKER",
+        "volumes": [],
         "docker": {
-            "image": "zutherb/mesos-killrweather-app",
-            "network": "HOST",
-            "forcePullImage": true
+          "image": "codecentric/bus-demo-ingest",
+          "network": "HOST",
+          "privileged": false,
+          "parameters": [],
+          "forcePullImage": true
         }
-    },
-    "cmd": "./ingest.sh -Dcassandra.connection.host=cassandra-dcos-node.cassandra.dcos.mesos -Dkafka.hosts.0=broker-0.kafka.mesos:1025 -Dkafka.zookeeper.connection=leader.mesos"
+      },
+      "env": {
+        "CASSANDRA_HOST": "$CASSANDRA_HOST",
+        "CASSANDRA_PORT": "$CASSANDRA_PORT",
+        "KAFKA_HOST": "$KAFKA_HOST",
+        "KAFKA_PORT": "$KAFKA_PORT"
+      }
 }
 EOF
-dcos marathon app add /opt/smack/conf/killrweather_ingest.json
+dcos marathon app add /opt/smack/conf/bus-demo-ingest.json
 ```
 
 ---
