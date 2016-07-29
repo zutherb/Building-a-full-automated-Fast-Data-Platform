@@ -145,5 +145,9 @@ resource "aws_launch_configuration" "public_slave" {
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
-<p style="background-color:white">https://github.com/ANierbeck/BusFloatingData</p> 
-<p style="background-color:white">https://github.com/zutherb/terraform-dcos</p> 
+<p>
+    <ul>
+        <li><a style="color:white" href="https://github.com/ANierbeck/BusFloatingData">https://github.com/ANierbeck/BusFloatingData</a></li>
+        <li><a style="color:white" href="https://github.com/zutherb/terraform-dcos">https://github.com/zutherb/terraform-dcos/</a></li>
+    </ul>
+</p>  
