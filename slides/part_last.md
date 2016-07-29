@@ -54,11 +54,11 @@
 
 <p>@Bernd_Z</p>
 
-<p style="background-color:white">
+<p>
     <ul>
-        <a href="http://github.com/zutherb">http://github.com/zutherb</a>
-        <a href="http://zutherb.github.io/Building-a-full-automated-Fast-Data-Platform/slides/">http://zutherb.github.io/Building-a-full-automated-Fast-Data-Platform/slides/</a>
-    <ul>
+        <li><a style="color:white" href="http://github.com/zutherb">http://github.com/zutherb</a></li>
+        <li><a style="color:white" href="http://zutherb.github.io/Building-a-full-automated-Fast-Data-Platform/slides/">http://zutherb.github.io/Building-a-full-automated-Fast-Data-Platform/slides/</a></li>
+    </ul>
 </p>  
 
 ---
