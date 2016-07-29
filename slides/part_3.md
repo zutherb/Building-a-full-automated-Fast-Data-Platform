@@ -71,7 +71,7 @@ Get detailed command description with 'dcos <command> --help'.
 dcos package install --yes cassandra
 dcos package install --yes kafka
 dcos package install --yes spark
-dcos kafka topic add killrweather.raw
+dcos kafka topic add METRO-Vehicles
 ```
 
 ---
