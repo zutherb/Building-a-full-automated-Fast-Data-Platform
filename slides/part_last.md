@@ -59,7 +59,7 @@
 
 ---
 
-<!-- .slide: data-background="img/background-title-orig.jpg" -->
+<!-- .slide: data-background="img/background-orange-orig.jpg" -->
 
 ### The End
 
