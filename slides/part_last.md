@@ -54,8 +54,12 @@
 
 <p>@Bernd_Z</p>
 
-<p style="background-color:white">http://github.com/zutherb</p>
-<p style="background-color:white">https://zutherb.github.io/Building-a-full-automated-Fast-Data-Platform/slides/</p>  
+<p style="background-color:white">
+    <ul>
+        <a href="http://github.com/zutherb">http://github.com/zutherb</a>
+        <a href="http://zutherb.github.io/Building-a-full-automated-Fast-Data-Platform/slides/">http://zutherb.github.io/Building-a-full-automated-Fast-Data-Platform/slides/</a>
+    <ul>
+</p>  
 
 ---
 
