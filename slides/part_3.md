@@ -1,5 +1,5 @@
 
-### DC/OS
+### Datacenter Operating System (DC/OS)
 
 <!-- .slide: data-background="img/background-orange-orig.jpg" -->
 
