@@ -112,6 +112,14 @@
 
 ---
 
+### Real World Example 
+
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
+
+<img src="./img/real-world-example.png" style="height:600px;background-color:white" />
+
+---
+
 ### Zeppelin
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
@@ -127,14 +135,6 @@
 - &#x1f604; No Jar-Wars  <!-- .element: class="fragment" --> 
 - &#x1f604; Easy analytics  <!-- .element: class="fragment" --> 
 - &#x1f621; New technology  <!-- .element: class="fragment" --> 
-
----
-
-### Real World Example 
-
-<!-- .slide: data-background="img/background-green-orig.jpg" -->
-
-<img src="./img/real-world-example.png" style="height:600px;background-color:white" />
 
 ---
 
