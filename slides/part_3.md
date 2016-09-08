@@ -108,14 +108,6 @@ dcos marathon app add /opt/smack/conf/bus-demo-ingest.json
 
 ---
 
-### Demo
-
-<!-- .slide: data-background="img/background-orange-orig.jpg" -->
-
-<img src="./img/demo.png" />
-
----
-
 ### Service Discovery
 
 <!-- .slide: data-background="img/background-title-orig.jpg" -->
@@ -280,6 +272,14 @@ app-t49o6-s2.marathon.mesos. 60	IN	A	10.0.3.201
         </tr>
     </tbody>
 </table>
+
+---
+
+### Demo
+
+<!-- .slide: data-background="img/background-title-orig.jpg" -->
+
+<img src="./img/demo.png" />
 
 ---
 
