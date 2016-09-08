@@ -22,32 +22,6 @@
 
 ---
 
-### Is your infrastructure a pet
-
-<!-- .slide: data-background="img/background-green-orig.jpg" -->
-
-<img src="./img/pig.jpg" style="background-color:white;height:600px" />
-
----
-
-### Treat your infrastructure like cattle
-
-<!-- .slide: data-background="img/background-green-orig.jpg" -->
-
-<img src="./img/cattle.jpg" style="background-color:white;height:500px"  />
-
----
-
-<!-- .slide: data-background="img/background-title-orig.jpg" -->
-
-### If you want your infrastructure like cattle
-
-#### keep calm
-#### and
-#### automate everything
-
----
-
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
 ### Feedback
@@ -56,7 +30,6 @@
 
 <p>
     <ul>
-        <li><a style="color:white" href="http://github.com/zutherb">http://github.com/zutherb</a></li>
         <li><a style="color:white" href="http://zutherb.github.io/Building-a-full-automated-Fast-Data-Platform/slides/">http://zutherb.github.io/Building-a-full-automated-Fast-Data-Platform/slides/</a></li>
     </ul>
 </p>  
