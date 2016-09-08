@@ -24,32 +24,6 @@
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
-### Download Filebeat
-
-```
-  - "content": |
-      [Unit]
-      Description=ELK: Download Filebeat
-      After=network-online.target
-      Wants=network-online.target
-      ConditionPathExists=!/opt/filebeat/filebeat
-      [Service]
-      Type=oneshot
-      StandardOutput=journal+console
-      StandardError=journal+console
-      ExecStartPre=/usr/bin/curl --fail --retry 20 --continue-at - --location --silent --show-error --verbose --output /tmp/filebeat.tar.xz ${filebeat_download_url}
-      ExecStartPre=/usr/bin/mkdir -p /opt/filebeat /tmp/filebeat /etc/filebeat/
-      ExecStartPre=/usr/bin/tar -axf /tmp/filebeat.tar.xz -C /tmp/filebeat --strip-components=1
-      ExecStart=-/bin/mv /tmp/filebeat/filebeat /opt/filebeat/filebeat
-      ExecStartPost=-/usr/bin/rm -rf /tmp/filebeat.tar.xz /tmp/filebeat
-    "name": |-
-      filebeat-download.service
-```
-
----
-
-<!-- .slide: data-background="img/background-green-orig.jpg" -->
-
 ### Start Filebeat
 
 ```
@@ -64,7 +38,7 @@
       Type=simple
       StandardOutput=journal+console
       StandardError=journal+console
-      ExecStart=/opt/filebeat/filebeat -e -c /etc/filebeat/filebeat.yml -d "publish"
+      ExecStart=docker run filebeat -e -c /etc/filebeat/filebeat.yml -d "publish"
     "enable": !!bool |-
       true
     "name": |-
@@ -100,7 +74,7 @@
 
 ---
 
-### Terraform
+### Terraform - Resource
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 
@@ -121,6 +95,22 @@ resource "aws_launch_configuration" "public_slave" {
 
 ---
 
+### Terraform - Builds or changes infrastructure
+
+<!-- .slide: data-background="img/background-green-orig.jpg" -->
+
+``` bash
+$ terraform apply
+Remote state configured and pulled.
+data.template_file.instana_configuration_admin_data: Refreshing state...
+data.template_file.instana_configuration_public_slave_data: Refreshing state...
+data.template_file.instana_configuration_master_data: Refreshing state...
+data.template_file.instana_configuration_slave_data: Refreshing state...
+aws_vpc_dhcp_options.dcos: Refreshing state... (ID: dopt-01326d68)
+```
+
+---
+
 ### Benefits of Terraform
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
@@ -128,7 +118,7 @@ resource "aws_launch_configuration" "public_slave" {
 - &#x1f604; Easy integration in a build pipeline  <!-- .element: class="fragment" --> 
 - &#x1f604; Easier to maintain  <!-- .element: class="fragment" --> 
 - &#x1f604; Easier to extend  <!-- .element: class="fragment" --> 
-- &#x1f604; Cloud-agnostic (AWS, Azure, etc.) <!-- .element: class="fragment" --> 
+- &#x1f604; Cloud-agnostic (AWS, Azure, Profitbricks) <!-- .element: class="fragment" --> 
 - &#x1f621; Need some time until new resources are adopted  <!-- .element: class="fragment" --> 
 
 ---
@@ -141,7 +131,7 @@ resource "aws_launch_configuration" "public_slave" {
 
 ---
 
-### Terraform - DC/OS Source &amp; Real World Example
+### Terraform - Real World Example
 
 <!-- .slide: data-background="img/background-green-orig.jpg" -->
 

@@ -83,7 +83,7 @@
      
 - Fast - delivers hundreds of MegaBytes per second to 1000s of clients <!-- .element: class="fragment" --> 
 - Scales - partitions data to manageable volumes <!-- .element: class="fragment" --> 
-- Managing backpressure <!-- .element: class="fragment" --> 
+- Reliable Ingest - Managing backpressure <!-- .element: class="fragment" --> 
 - Distributed - from the ground up <!-- .element: class="fragment" --> 
 
 ---
